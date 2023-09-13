@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * _isalpha - entry point
+ * _isalpha - Entry point
  *
  * Description: checks for alphabetic character
- * @c : character to be checked
+ * @c: The character to be checked
  *
- * Return: 1 if c is a letter, lowercase or uppercase otherwise return 0
+ * Return: 1 if c is a letter, lowercase or uppercase
  */
 
 int _isalpha(int c)
 {
-	int c;
-
-	if ((c >= 'a' && c <= 'z') || (C >= 'A' && C <= 'Z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
