@@ -11,9 +11,6 @@
 
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; *str != '\0'; str++)
-
-		puts(str++);
+	for (; *str != '\0'; str++)
+		puts(*str);
 }
