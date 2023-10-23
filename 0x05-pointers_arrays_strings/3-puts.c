@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "main.h"
 
 /**
@@ -12,9 +13,9 @@ void _puts(char *str)
 {
 	int i;
 
-	for (i = 0; *str != \0; str++)
+	for (i = 0; *str != '\0'; str++)
 	{
 		i++;
-		puts (i);
+		puts (str);
 	}
 }
