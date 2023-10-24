@@ -16,5 +16,5 @@ void puts2(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 
 	if (i % 2 == 0)
-		printf("%s\n", str[i]);
+		printf("%d\n", str[i]);
 }
