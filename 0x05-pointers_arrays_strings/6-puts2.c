@@ -1,4 +1,4 @@
-#include "stdio.h" 
+#include "stdio.h"
 #include "main.h"
 
 /**
@@ -17,5 +17,5 @@ void puts2(char *str)
 		i++;
 
 	if (i % 2 == 0)
-		printf ("%s\n", str);
+		printf("%s\n", str);
 }
