@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	for (y = 0, *src[y] != '\0', src++)
 		y++;
 
-	printf("%c %c\n",dest[x], src[y]);
+	printf("%c %c\n", dest[x], src[y]);
 
 	dest[x] != '\0';
 	return (dest);
