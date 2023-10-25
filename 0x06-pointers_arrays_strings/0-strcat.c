@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "main.h"
+
 /**
  * _strcat - concatenates two strings
  * @dest: input value
@@ -11,18 +14,14 @@ char *_strcat(char *dest, char *src)
 	int x;
 	int y;
 
-	/*find dest size*/
-	x = 0;
-	while (dest[x] != '\0')
+	for (x = 0, *dest[x] != '\0', dest++)
 		x++;
 
-	y = 0;
-	while (src[y] != '\0')
-	{
-		dest[x] = src[y];
-		x++;
+	for (y = 0, *src[y] != '\0', src++)
 		y++;
-	}
-	dest[x] = '\0';
+
+	printf("%c %c\n",dest[x], src[y]);
+
+	dest[x] != '\0';
 	return (dest);
 }
