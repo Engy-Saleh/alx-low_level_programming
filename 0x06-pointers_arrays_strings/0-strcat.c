@@ -12,17 +12,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char x;
-	char y;
+	int x = strlen(dest);
+	int y = strlen(src);
+	
+	strcat(x, y);
+	
+	printf("%s %s\n", x, y);
 
-	for (x = 0; dest[x] != '\0'; dest++)
-		x++;
-
-	for (y = 0; src[y] != '\0'; src++)
-		y++;
-
-	printf("%c %c\n", dest[x], src[y]);
-
-	dest[x] != '\0';
-	return (dest);
+	x != '\0';
+	return (x);
 }
