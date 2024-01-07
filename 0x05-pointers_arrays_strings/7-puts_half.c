@@ -8,12 +8,22 @@
  * Return: Nothing
  */
 
-void puts_half(char *s)
+void puts_half(char *str)
 {
 	int i;
 
-	i = 0;
-	for (i /= 0; s[i] != '\0'; i++)
-		_putchar(s[i]);
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	if (str[i] / 10 == 0)
+	{
+		for (i = str / 2; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	}
+
+	else
+		_putchar((str[i] / 10) + '0')
+
 	_putchar('\n');
 }
+
