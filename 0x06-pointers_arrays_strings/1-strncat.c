@@ -13,14 +13,13 @@ char *_strncat(char *dest, char *src, int n)
 	int x;
 	int y;
 
-	/*find dest size*/
-	x = 0;
-	while (dest[x])
-		x++;
+	for (x = 0; dest[x] != '\0'; x++)
+		;
 
 	for (y = 0; y < n && src[y] != '\0'; y++)
+	{
 		dest[x + y] = src[y];
-	dest[x + y] = '\0';
-
-	return (dest);
+		x++;
+	}
+	return (dest[x]);
 }
