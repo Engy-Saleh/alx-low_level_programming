@@ -14,7 +14,7 @@ int main( int argc, char *argv)
 {
 	int x = 0, y = 0;
 
- 	if (argc == 2)
+ 	if (argc == 3)
 	{
 	 	x = atoi(argv[1]);
 		y = atoi(argv[2]);
