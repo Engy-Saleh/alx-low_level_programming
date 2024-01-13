@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -12,12 +13,12 @@ int main(int argc, char *argv[])
 {
 	int *c, sum = 0;
 
-	if  (argc == 0)
+	if  (argc == 1)
 		printf("o\n");
 
-	while (argc -1)
+	while (argc > 1)
 	{
-		for (c = argv[argc], *c, c++)
+		for (c = argv[argc], *c != '\0', c++)
 		{
 			if (*c < '0' || *c > '9')
 			{
@@ -27,7 +28,7 @@ int main(int argc, char *argv[])
 
 			else
 			{
-				sum += atoi(argv[argc]);
+				sum += atoi(c);
 				printf("%d\n",sum);
 			}
 		}
