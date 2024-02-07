@@ -31,12 +31,12 @@ char *str_concat(char *s1, char *s2)
 	if (concat == NULL)
 		return (NULL);
 
-	while (s1 != '\0')
-		concat[i] = s1;
+	while (s1[i] != '\0')
+		concat[i] = s1[i];
 		i++;
 
-	while (s2 != '\0')
-		concat[k] = s2;
+	while (s2[k] != '\0')
+		concat[k] = s2[k];
 		i++, k++;
 
 	concat[i] = '\0';
