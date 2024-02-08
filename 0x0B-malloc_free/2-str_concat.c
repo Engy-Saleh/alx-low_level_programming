@@ -1,18 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
-/**
- * *str_concat - concatenates two strings
- * @s1: string to concatenate
- * @s2: other string to concatenate
- *
- * Return: pointer to the new string created (Success), or NULL (Error)
- */
-char *str_concat(char *s1, char *s2)
-{
-#include "main.h"
-#include <stdlib.h>
 /**
  * str_concat - concatenates two strings.
  * @s1: input one to concat
@@ -20,6 +8,7 @@ char *str_concat(char *s1, char *s2)
  *
  * Return: concat of s1 and s2
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *concat;
@@ -53,5 +42,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	concat[i] = '\0';
 	return (concat);
-}
 }
