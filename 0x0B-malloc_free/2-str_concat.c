@@ -31,13 +31,11 @@ char *str_concat(char *s1, char *s2)
 	if (concat == NULL)
 		return (NULL);
 
-	while (s1[i] != '\0')
-		concat[i] = s1[i];
-		i++;
+	for (int j = 0; j < i; j++)
+		concat[j] = s1[j];
 
-	while (s2[k] != '\0')
-		concat[i + k] = s2[k];
-		i++, k++;
+	for (int j = 0; j < k; j++)
+		concat[i + j] = s2[j];
 
 	concat[i + k] = '\0';
 	return (concat);
