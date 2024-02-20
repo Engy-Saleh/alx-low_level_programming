@@ -9,25 +9,20 @@
   *
   * Return: ...
   */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list args;
-	unsigned int i = 0;
+	unsigned int i = n;
+	va_list ap;
 
-	if (n > 0)
+	if (!n)
 	{
-		va_start(args, n);
-
-		while (i < n)
-		{
-			printf("%d", va_arg(args, int));
-
-			if (i != n - 1  && separator != NULL)
-				printf("%s", separator);
-
-			i++;
-		}
-		va_end(args);
+		printf("\n");
+		return;
 	}
-	printf("\n");
+
+	va_start(ap, n);
+	while (i--)
+		printf("%d%s", va_arg(ap, int), i ? (separator ? separator : "") : "\n");
+	va_end(ap);
 }
